@@ -1,0 +1,57 @@
+%pagination-default{
+    @include margin(top 50px);
+    text-align: center;
+
+    .pagination{
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .pagination li{
+        @include margin(right 3px);
+        float: left;
+        position: relative;
+        z-index: 10;
+
+        &:last-child{
+            @include margin(right 0);
+        }
+
+        &::before{
+            @include size(30px, 30px);
+            display: none;
+            position: absolute;
+            top: 6px;
+            left: 7px;
+            z-index: -10;
+            background: $white;
+            content: '';
+            transform: rotate(45deg);
+        }
+
+        span,
+        a{
+            @include size(44px, 44px);
+            display: block;
+            line-height: 44px;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .pagination li:hover,
+    .pagination li.active{
+        &::before{
+            display: block;
+        }
+
+        span,
+        a{
+            color: #24180e;
+        }
+    }
+}
+
+@mixin pagination(){
+    @extend %pagination-default;
+}
