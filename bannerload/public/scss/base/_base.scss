@@ -1,0 +1,25 @@
+@import '../components/_button';
+
+body{
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+    word-break: keep-all;
+}
+
+.main{
+    min-width: $screen-size;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn-orange{
+    @include btn(orange-fill);
+}
+
+.skin-container{
+    @include size(100%);
+    @include background(null, no-repeat, 50% 0);
+    background-size: cover;
+}

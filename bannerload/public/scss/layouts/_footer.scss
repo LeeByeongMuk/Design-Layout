@@ -1,0 +1,31 @@
+@import '../helpers/_variables';
+@import '../helpers/_extends';
+@import '../helpers/_mixins';
+
+.footer{
+    background: #0c0c0d;
+}
+
+.footer-container{
+    @include size($screen-size);
+    @include margin(0 auto);
+    @include padding(45px 0);
+    text-align: center;
+
+    .footer-legal{
+        @include margin(top 30px);
+
+        a{
+            @extend %reset-link;
+            font-weight: 300;
+            color: #a6a6a7;
+        }
+    }
+
+    .copyright{
+        @include margin(top 20px);
+        font-weight: 300;
+        font-size: 14px;
+        color: #a6a6a7;
+    }
+}

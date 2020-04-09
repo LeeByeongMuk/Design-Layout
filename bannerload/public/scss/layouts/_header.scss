@@ -1,0 +1,131 @@
+@import '../helpers/_variables';
+@import '../helpers/_extends';
+@import '../helpers/_mixins';
+
+%bg-skin-default{
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(104, 92, 66, 0.5) 0%,
+            rgba(104, 92, 66, 1) 5px,
+            rgba(217, 185, 112, 1) 55%,
+            rgba(104, 92, 66, 1) 100%) 1;
+    border-image-width: 2px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-clip: padding-box;
+}
+
+.nav-container{
+    @include size(width 100% min $screen-size);
+    @include margin(0 auto);
+    position: absolute;
+    top: 118px;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav .nav-header{
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    img{
+        @include size(100%)
+    }
+
+    .nav-header-logo-default{
+        display: block;
+    }
+
+    .nav-header-logo-fixed{
+        display: none;
+    }
+}
+
+.nav .nav-menu{
+    @extend %bg-skin-default;
+    @include margin(top 46px left -17px);
+    @include padding(0);
+    float: left;
+    border-width: 2px 0 2px 17px;
+    border-left-color: rgba(0, 0, 0, 0.0);
+
+    li{
+        @include size(null, 37px);
+        @include padding(top 12px);
+        @include box-sizing(border-box);
+        float: left;
+
+        a{
+            @extend %reset-link;
+            @include padding(0 10px);
+            font-size: 16px;
+            color: $beige;
+        }
+
+        a.active{
+            font-weight: bold;
+            color: $white;
+        }
+    }
+}
+
+.nav-fixed{
+    @extend %bg-skin-default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-width: 2px 0;
+}
+
+.nav-fixed .nav{
+    @include size(null, 100%);
+}
+
+.nav-fixed .nav .nav-header{
+    @include margin(top 7px right 40px);
+    position: static;
+
+    img{
+        @include size(auto, 42px);
+    }
+
+    .nav-header-logo-default{
+        display: none;
+    }
+
+    .nav-header-logo-fixed{
+        display: block;
+    }
+}
+
+.nav-fixed .nav .nav-menu{
+    @include margin(8px 0 0 0);
+    border: none;
+    background: none;
+
+    li{
+        @include size(null, 37px);
+        @include padding(top 12px);
+        @include box-sizing(border-box);
+        float: left;
+
+        a{
+            @extend %reset-link;
+            @include padding(0 10px);
+            font-size: 16px;
+            color: $beige;
+        }
+
+        a.active{
+            font-weight: bold;
+            color: $white;
+        }
+    }
+}
