@@ -45,14 +45,14 @@
             @include margin(bottom 10px);
             display: block;
             font-size: 13px;
-            color: #6a5a45;
+            color: $brown;
         }
 
         .list-text{
             font-weight: 300;
             font-size: $font-size-base;
             line-height: 1.4;
-            color: #e7e3c6;
+            color: $beige-999;
         }
     }
 }

@@ -18,7 +18,7 @@
         a{
             @extend %reset-link;
             font-weight: 300;
-            color: #a6a6a7;
+            color: $gray;
         }
     }
 
@@ -26,6 +26,6 @@
         @include margin(top 20px);
         font-weight: 300;
         font-size: 14px;
-        color: #a6a6a7;
+        color: $gray;
     }
 }

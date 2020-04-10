@@ -94,7 +94,7 @@
 }
 .intro-container .intro-title {
   margin: 310px 0 15px;
-  background-image: linear-gradient(90deg, #716E5A 0%, #E7E3C6 50%, #FFFFFF 100%);
+  background-image: linear-gradient(90deg, #716e5a 0%, #e7e3c6 50%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 54px;

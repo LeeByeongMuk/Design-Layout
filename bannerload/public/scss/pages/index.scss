@@ -45,7 +45,7 @@
 
     .intro-title{
         @include margin(310px 0 15px);
-        background-image: linear-gradient(90deg, #716E5A 0%, #E7E3C6 50%, #FFFFFF 100%);
+        background-image: linear-gradient(90deg, $brown-999 0%, $beige-999 50%, $white 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 54px;
@@ -58,7 +58,7 @@
         font-size: 20px;
         line-height: 30px;
         color: $white;
-        text-shadow: 1px 1px 1px #131212;
+        text-shadow: 1px 1px 1px $black-111;
     }
 
     .btn-orange{
@@ -79,7 +79,7 @@
     @include box-shadow(0px -5px 15px 3px rgba(0, 0, 0, 0.75));
     @include box-sizing(border-box);
     overflow: hidden;
-    background: #131212;
+    background: $black-111;
 
     .title-wrap{
         @include margin(top 50px);
@@ -90,7 +90,7 @@
             float: left;
             font-size: 24px;
             line-height: 100%;
-            color: #e7e3c6;
+            color: $beige-999;
         }
 
         .btn-link{
@@ -128,7 +128,7 @@
     p{
         font-weight: 300;
         font-size: 25px;
-        color: #e7e3c6;
+        color: $beige-999;
     }
 
     .btn-orange{
@@ -144,7 +144,7 @@
     @include size(100%);
     @include padding(50px 0);
     display: none;
-    background: #131212;
+    background: $black-111;
     text-align: center;
 
     &.show{

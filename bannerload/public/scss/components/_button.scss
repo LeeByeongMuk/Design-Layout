@@ -12,7 +12,7 @@
 }
 
 %btn-orange{
-    @include border(1px solid #f29156);
+    @include border(1px solid $orange-333);
     background: $orange;
     color: $white;
 }

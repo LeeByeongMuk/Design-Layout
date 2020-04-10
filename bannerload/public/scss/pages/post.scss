@@ -21,14 +21,14 @@
     @include box-shadow(0px -5px 15px 3px rgba(0, 0, 0, 0.75));
     @include box-sizing(border-box);
     display: inline-block;
-    background: #131212;
+    background: $black-111;
 
     .post-wrap{
         @include size(width 80% min $screen-size);
         @include margin(-130px auto 0);
         @include padding(30px);
         @include box-sizing(border-box);
-        background: #13212e;
+        background: $dark-blue;
     }
 
     .post-header{
@@ -38,20 +38,20 @@
         .post-title{
             font-weight: bold;
             font-size: 40px;
-            color: #f5f5f5;
+            color: $gray-888;
         }
 
         > span{
             display: inline-block;
             font-size: 13px;
-            color: #d0d3d5;
+            color: $gray-999;
         }
 
         .txt{
             @include size(1px, 12px);
             @include margin(0 5px -2px);
             overflow: hidden;
-            background: #d0d3d5;
+            background: $gray-999;
             text-indent: -9999px;
         }
     }
@@ -68,17 +68,17 @@
     .post-content{
         @include margin(top 40px);
         font-weight: 300;
-        color: #d0d3d5;
+        color: $gray-999;
         word-break: keep-all;
 
         a{
             @extend %reset-link;
-            @include border(1px dotted #e85a5a, bottom);
-            color: #e85a5a;
+            @include border(1px dotted $red-999, bottom);
+            color: $red-999;
 
             &:hover{
-                border-color: #bf1f1f;
-                color: #bf1f1f;
+                border-color: $red;
+                color: $red;
             }
         }
     }
