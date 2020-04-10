@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Design Layout</title>
+
+    <!-- common style sheet -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+
+    <!-- your style sheet -->
+    <link rel="stylesheet" href="../../public/css/pages/news.css">
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap">
+
+    <!-- common script -->
+    <script type="text/javascript" src="../../public/js/common.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- include header.html -->
+    <div class="header-container">
+        <header class="header">
+            <div class="header-logo-wrap">
+                <h1 class="header-logo">
+                    <a href="/">
+                        <img src="../../public/images/header_logo.png" class="header-logo-default" alt="header logo">
+                        <img src="../../public/images/header_logo_fixed.png" class="header-logo-fixed" alt="header logo fixed">
+                    </a>
+                </h1>
+            </div>
+            <ul class="header-menu">
+                <li>
+                    <a href="/home" class="active">
+                        home
+                    </a>
+                </li>
+                <li>
+                    <a href="/news">
+                        news
+                    </a>
+                </li>
+                <li>
+                    <a href="/about">
+                        about
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- include page.html -->
+
+    <main class="main">
+        <div class="skin-container"></div>
+
+        <article class="news-container">
+            <h2 class="hidden">News</h2>
+
+            <ul class="news-list">
+                <li>
+                    <a href="#">
+                        <div class="list-image-wrap">
+                            <img src="../../public/images/news_thumbnaul_1.png" alt="">
+                        </div>
+
+                        <div class="list-info-wrap">
+                            <h3 class="list-title">Title</h3>
+                            <span class="list-date">2020.04.10</span>
+                            <div class="list-text">
+                                Text
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="paginate-container">
+                <ul class="pagination">
+                    <li class="disabled">
+                        <span>«</span>
+                    </li>
+                    <li class="active">
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">»</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <!-- include footer.html -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h1 class="footer-logo">
+                <a href="/"><img src="../../public/images/footer_logo.png" alt="footer logo"></a>
+            </h1>
+
+            <div class="footer-legal">
+                <a href="#">legal</a>
+            </div>
+
+            <p class="copyright">
+                © copyright
+            </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -108,8 +108,8 @@
 }
 
 .skin-container {
-  height: 500px;
-  background-image: url("/assets/images/news-bg.jpg");
+  height: 350px;
+  background-image: url("../../images/news-bg.jpg");
 }
 
 .news-container {
@@ -123,9 +123,6 @@
   box-sizing: border-box;
   display: inline-block;
   background: #131212;
-}
-.news-container .news-list {
-  margin-top: -120px;
 }
 
 /*# sourceMappingURL=news.css.map */
