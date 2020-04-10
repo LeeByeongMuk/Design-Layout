@@ -58,7 +58,7 @@
 
     li{
         @include size(null, 37px);
-        @include padding(top 12px);
+        @include padding(top 9px);
         @include box-sizing(border-box);
         float: left;
 
@@ -111,21 +111,7 @@
     background: none;
 
     li{
-        @include size(null, 37px);
         @include padding(top 12px);
-        @include box-sizing(border-box);
         float: left;
-
-        a{
-            @extend %reset-link;
-            @include padding(0 10px);
-            font-size: 16px;
-            color: $beige;
-        }
-
-        a.active{
-            font-weight: bold;
-            color: $white;
-        }
     }
 }

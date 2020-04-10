@@ -1,4 +1,4 @@
-.footer-container .footer-legal a, .header-fixed .header .header-menu li a, .header .header-menu li a {
+.footer-container .footer-legal a, .header .header-menu li a {
   text-decoration: none;
 }
 
@@ -361,6 +361,7 @@ textarea {
 body {
   font-size: 16px;
   font-family: "Overpass", sans-serif;
+  line-height: 1.6;
   word-break: keep-all;
 }
 
@@ -379,7 +380,7 @@ body {
   background-size: cover;
 }
 
-.footer-container .footer-legal a, .header-fixed .header .header-menu li a, .header .header-menu li a {
+.footer-container .footer-legal a, .header .header-menu li a {
   text-decoration: none;
 }
 
@@ -434,7 +435,7 @@ body {
 }
 .header .header-menu li {
   height: 37px;
-  padding-top: 12px;
+  padding-top: 9px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -483,24 +484,11 @@ body {
   background: none;
 }
 .header-fixed .header .header-menu li {
-  height: 37px;
   padding-top: 12px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   float: left;
 }
-.header-fixed .header .header-menu li a {
-  padding: 0 10px;
-  font-size: 16px;
-  color: #f4e2a9;
-}
-.header-fixed .header .header-menu li a.active {
-  font-weight: bold;
-  color: #ffffff;
-}
 
-.footer-container .footer-legal a, .header .header-menu li a, .header-fixed .header .header-menu li a {
+.footer-container .footer-legal a, .header .header-menu li a {
   text-decoration: none;
 }
 
