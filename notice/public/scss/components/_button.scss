@@ -1,0 +1,26 @@
+%btn-default{
+    @include padding(0 25px);
+    @include border(0);
+    @include border-radius(0);
+    @include box-sizing(border-box);
+    display: inline-block;
+    font-family: $font-family-base;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+%btn-orange{
+    @include border(1px solid $orange-333);
+    background: $orange;
+    color: $white;
+}
+
+@mixin btn($type: null){
+    @extend %btn-default;
+
+    @if $type == orange-fill {
+        @extend %btn-orange;
+    }
+}
