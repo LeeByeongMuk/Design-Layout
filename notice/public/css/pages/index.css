@@ -51,6 +51,55 @@
   line-height: 14px;
 }
 
+.paginate-container {
+  margin-top: 50px;
+  text-align: center;
+}
+.paginate-container .pagination {
+  display: inline-block;
+  overflow: hidden;
+}
+.paginate-container .pagination li {
+  margin-right: 3px;
+  float: left;
+  position: relative;
+  z-index: 10;
+}
+.paginate-container .pagination li:last-child {
+  margin-right: 0;
+}
+.paginate-container .pagination li::before {
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -10;
+  background: #0bc6e3;
+  content: "";
+  transform: rotate(45deg);
+}
+.paginate-container .pagination li span,
+.paginate-container .pagination li a {
+  width: 58px;
+  height: 58px;
+  display: block;
+  line-height: 58px;
+  color: #0bc6e3;
+  text-decoration: none;
+}
+.paginate-container .pagination li:hover::before,
+.paginate-container .pagination li.active::before {
+  display: block;
+}
+.paginate-container .pagination li:hover span,
+.paginate-container .pagination li:hover a,
+.paginate-container .pagination li.active span,
+.paginate-container .pagination li.active a {
+  color: #ffffff;
+}
+
 .main {
   padding: 40px 60px;
   overflow: hidden;
