@@ -2,167 +2,42 @@
 @import '../helpers/_extends';
 @import '../helpers/_mixins';
 
-@import '../components/_button';
 @import '../components/_news-list';
 
-%container-default{
-    @include size(940px);
-    @include margin(0 auto);
-}
-
 .main{
+    @include padding(40px 60px);
     overflow: hidden;
 }
 
-.container{
-    @include size($screen-size);
-    @include margin(0 auto);
-}
-
-.top-container{
-    @include padding(208px 0 100px);
-
-}
-
-.video-container{
-    @include size(100%, 100%);
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
-
-    #video-main{
-        @include size(100%, 100%);
-        object-fit: cover;
-    }
-}
-
-.intro-container{
+.notice-container{
     @include size(100%);
-    @include margin(0 auto);
-    text-align: center;
-
-    .intro-title{
-        @include margin(310px 0 15px);
-        background-image: linear-gradient(90deg, $brown-999 0%, $beige-999 50%, $white 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 54px;
-        line-height: 70px;
-    }
-
-    .intro-text{
-        @include size(66.6%);
-        @include margin(0 auto 35px);
-        font-size: 20px;
-        line-height: 30px;
-        color: $white;
-        text-shadow: 1px 1px 1px $black-111;
-    }
-
-    .btn-orange{
-        @include size(null, 50px);
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 54px;
-
-        .discount{
-            text-decoration: line-through;
-        }
-    }
-}
-
-.news-container{
-    @include size(100%);
-    @include padding(0 15px 40px);
-    @include box-shadow(0px -5px 15px 3px rgba(0, 0, 0, 0.75));
     @include box-sizing(border-box);
     overflow: hidden;
-    background: $black-111;
 
     .title-wrap{
-        @include margin(top 50px);
-        @include padding(0 30px);
-        overflow: hidden;
+        @include size(100%, 95px);
+        @include padding(30px);
+        @include box-sizing(border-box);
+        background: $black;
+        line-height: 35px;
+        color: $white;
 
-        .news-title{
+        .notice-title{
+            @include margin(right 4%);
+            @include padding(right 4%);
+            @include border(1px solid rgb(56, 73, 81), right);
             float: left;
-            font-size: 24px;
-            line-height: 100%;
-            color: $beige-999;
+            font-size: 30px;
+            margin-left: 4%;
         }
 
-        .btn-link{
-            float: right;
-            font-size: 18px;
-            line-height: 100%;
-            color: $orange;
+        p{
+            font-size: 12px;
         }
     }
 
-    .news-list{
+    .notice-list{
         @include news-list();
-    }
-}
-
-.main-container{
-    @include size(100%, min 500px);
-    @include padding(130px 0);
-    @include background('../../images/banner_bg_1.jpg', no-repeat, 50% 0);
-    @include box-sizing(border-box);
-    background-size: cover;
-    text-align: center;
-
-    .container{
-        @extend %container-default;
-    }
-
-    h2{
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 1.3;
-        color: $white;
-    }
-
-    p{
-        font-weight: 300;
-        font-size: 25px;
-        color: $beige-999;
-    }
-
-    .btn-orange{
-        @include size(min 200px, 50px);
-        @include margin(top 30px);
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 54px;
-    }
-}
-
-.text-container{
-    @include size(100%);
-    @include padding(50px 0);
-    display: none;
-    background: $black-111;
-    text-align: center;
-
-    &.show{
-        display: block;
-    }
-
-    .container{
-        @extend %container-default;
-    }
-
-    p{
-        color: $white;
-        text-align: left;
-    }
-
-    .btn-show-text{
-        @include size(null, 50px);
-        @include margin(30px auto 0);
-        line-height: 52px;
+        @include padding(0 30px);
     }
 }

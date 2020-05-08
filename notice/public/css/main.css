@@ -1,7 +1,3 @@
-.footer-container .footer-legal a, .header .header-menu li a {
-  text-decoration: none;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -333,187 +329,20 @@ textarea {
   padding: 0.2em 0;
 }
 
-.btn-orange {
-  padding: 0 25px;
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  font-family: "Overpass", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn-orange {
-  border: 1px solid #f29156;
-  background: #f1751b;
-  color: #ffffff;
-}
-
 body {
-  font-size: 16px;
-  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 1.6;
   word-break: keep-all;
 }
 
 .main {
-  min-width: 1024px;
+  max-width: 1680px;
+  min-width: 320px;
 }
 
 .hidden {
   display: none;
-}
-
-.skin-container {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-}
-
-.footer-container .footer-legal a, .header .header-menu li a {
-  text-decoration: none;
-}
-
-.header-fixed, .header .header-menu {
-  border-style: solid;
-  border-image: linear-gradient(to right, rgba(104, 92, 66, 0.5) 0%, #685c42 5px, #d9b970 55%, #685c42 100%) 1;
-  border-image-width: 2px 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-clip: padding-box;
-}
-
-.header-container {
-  width: 100%;
-  min-width: 1024px;
-  margin: 0 auto;
-  position: absolute;
-  top: 118px;
-  left: 0;
-  z-index: 1000;
-  text-align: center;
-}
-
-.header {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-}
-
-.header .header-logo-wrap {
-  float: left;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.header .header-logo-wrap img {
-  width: 100%;
-}
-.header .header-logo-wrap .header-logo-default {
-  display: block;
-}
-.header .header-logo-wrap .header-logo-fixed {
-  display: none;
-}
-
-.header .header-menu {
-  margin-top: 46px;
-  margin-left: -17px;
-  padding: 0;
-  float: left;
-  border-width: 2px 0 2px 17px;
-  border-left-color: transparent;
-}
-.header .header-menu li {
-  height: 37px;
-  padding-top: 9px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-}
-.header .header-menu li a {
-  padding: 0 10px;
-  font-size: 16px;
-  color: #f4e2a9;
-}
-.header .header-menu li a.active {
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-width: 2px 0;
-}
-
-.header-fixed .header {
-  height: 100%;
-}
-
-.header-fixed .header .header-logo-wrap {
-  margin-top: 7px;
-  margin-right: 40px;
-  position: static;
-}
-.header-fixed .header .header-logo-wrap img {
-  width: auto;
-  height: 42px;
-}
-.header-fixed .header .header-logo-wrap .header-logo-default {
-  display: none;
-}
-.header-fixed .header .header-logo-wrap .header-logo-fixed {
-  display: block;
-}
-
-.header-fixed .header .header-menu {
-  margin: 8px 0 0 0;
-  border: none;
-  background: none;
-}
-.header-fixed .header .header-menu li {
-  padding-top: 12px;
-  float: left;
-}
-
-.footer-container .footer-legal a, .header .header-menu li a {
-  text-decoration: none;
-}
-
-.footer {
-  background: #0c0c0d;
-}
-
-.footer-container {
-  width: 1024px;
-  margin: 0 auto;
-  padding: 45px 0;
-  text-align: center;
-}
-.footer-container .footer-legal {
-  margin-top: 30px;
-}
-.footer-container .footer-legal a {
-  font-weight: 300;
-  color: #a6a6a7;
-}
-.footer-container .copyright {
-  margin-top: 20px;
-  font-weight: 300;
-  font-size: 14px;
-  color: #a6a6a7;
 }
 
 /*# sourceMappingURL=main.css.map */

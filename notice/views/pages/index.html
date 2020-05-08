@@ -9,10 +9,56 @@
 
     <!-- your style sheet -->
     <link rel="stylesheet" href="../../public/css/pages/index.css">
+
+    <!-- font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 </head>
 <body>
 <div id="app">
-    
+    <!-- include page.html -->
+    <main class="main">
+        <article class="notice-container">
+            <div class="title-wrap">
+                <h2 class="notice-title">공지사항</h2>
+                <p>게임 및 서비스 관련 공지사항</p>
+            </div>
+
+            <ul class="notice-list">
+                <li>
+                    <a href="#">
+                        <div class="list-image-wrap">
+                            <img src="../../public/images/notice_thumbnail_1.png" alt="">
+                        </div>
+
+                        <div class="list-info-wrap">
+                            <div class="list-type">공지사항</div>
+                            <h3 class="list-title">오월은 푸르구나 우리들은 세일한다</h3>
+                            <div class="list-date">
+                                6일 전
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="paginate-container">
+                <ul class="pagination">
+                    <li class="disabled">
+                        <span>«</span>
+                    </li>
+                    <li class="active">
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">»</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
 </div>
 </body>
 </html>
